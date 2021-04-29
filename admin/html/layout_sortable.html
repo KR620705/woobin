@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="IE=EDGE">
+	<meta name="Author" content="chowoobin">
+	<meta name="keywords" content="A Content">
+	<meta name="description" content="A Content">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>A Content 관리자</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/common.js"></script>
+
+</head>
+
+<body>
+	<div id="wrap">
+
+		<!-- lnb// -->
+		<div id="lnb">
+			<h1><a href="javascript:;">A-Content</a></h1>
+			<nav>
+				<ul>
+					<li><!-- 현재페이지 : li class="active" 추가 -->
+						<a href="javascript:;" class="depth1">1depth</a>
+						<div class="inner-menu">
+							<ul>
+								<li><a href="javascript:;">2depth</a></li><!-- 현재페이지 : li class="active" 추가 -->
+								<li><a href="javascript:;">2depth</a></li>
+								<li><a href="javascript:;">2depth</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;" class="depth1">1depth</a>
+						<div class="inner-menu">
+							<ul>
+								<li><a href="javascript:;">2depth</a></li>
+								<li><a href="javascript:;">2depth</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;" class="depth1">1depth</a>
+						<div class="inner-menu">
+							<ul>
+								<li><a href="javascript:;">2depth</a></li>
+								<li><a href="javascript:;">2depth</a></li>
+								<li><a href="javascript:;">2depth</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!-- //lnb -->
+
+		<!-- content// -->
+		<div id="content">
+
+			<!-- cont-head// -->
+			<section class="cont-head">
+				<p><em>관리자님</em> 환영합니다. 마지막 접속일 : 2021.04.20. 14:31</p>
+				<div class="util">
+					<a href="javascript:;" class="btn logout">로그아웃</a>
+				</div>
+			</section>
+			<!-- //cont-head -->
+
+			<!-- cont-body// -->
+			<section class="cont-body">
+
+				<!-- 소제목 영역// -->
+				<h2 class="h2-title">메뉴관리</h2>
+				<!-- //소제목 영역 -->
+				
+				<!-- 드래그앤드롭// -->
+				<h3 class="sortable-title">드로그앤드롭 all</h3>
+				<ul id="sortable_01" class="sortable column-4">
+					<!--  col 개수에 따라 숫자도 맞춰주세요. 2개일경우 column-2, 3개일경우 column-3... -->
+					<li>
+						<div class="col tal">
+							<span class="depth1">회원 관리</span>
+						</div>
+						<div class="col tal">
+							<span class="depth2"></span>
+						</div>
+						<div class="col">
+							<span class="color-blue">사용중</span>
+						</div>
+						<div class="col">
+							<button type="button" class="btn">수정</button>
+							<button type="button" class="btn">삭제</button>
+						</div>
+					</li>
+					<li>
+						<div class="col tal">
+							<span class="depth1">콘텐츠 관리</span>
+						</div>
+						<div class="col tal">
+							<span class="depth2"></span>
+						</div>
+						<div class="col">
+							<span class="color-blue">사용중</span>
+						</div>
+						<div class="col">
+							<button type="button" class="btn">수정</button>
+							<button type="button" class="btn">삭제</button>
+						</div>
+					</li>
+					<li>
+						<div class="col tal">
+							<span class="depth1"></span>
+						</div>
+						<div class="col tal">
+							<span class="depth2">카테고리 관리</span>
+						</div>
+						<div class="col">
+							<span class="color-blue">사용중</span>
+						</div>
+						<div class="col">
+							<button type="button" class="btn">수정</button>
+							<button type="button" class="btn">삭제</button>
+						</div>
+					</li>
+					<li>
+						<div class="col tal">
+							<span class="depth1"></span>
+						</div>
+						<div class="col tal">
+							<span class="depth2">콘텐츠 관리</span>
+						</div>
+						<div class="col">
+							<span class="color-blue">사용중</span>
+						</div>
+						<div class="col">
+							<button type="button" class="btn">수정</button>
+							<button type="button" class="btn">삭제</button>
+						</div>
+					</li>
+					<li>
+						<div class="col tal">
+							<span class="depth1">사이트 관리</span>
+						</div>
+						<div class="col tal">
+							<span class="depth2"></span>
+						</div>
+						<div class="col">
+							<span class="color-blue">사용중</span>
+						</div>
+						<div class="col">
+							<button type="button" class="btn">수정</button>
+							<button type="button" class="btn">삭제</button>
+						</div>
+					</li>
+					<li>
+						<div class="col tal">
+							<span class="depth1"></span>
+						</div>
+						<div class="col tal">
+							<span class="depth2">공통 코드 관리</span>
+						</div>
+						<div class="col">
+							<span class="color-blue">사용중</span>
+						</div>
+						<div class="col">
+							<button type="button" class="btn">수정</button>
+							<button type="button" class="btn">삭제</button>
+						</div>
+					</li>
+					<li>
+						<div class="col tal">
+							<span class="depth1"></span>
+						</div>
+						<div class="col tal">
+							<span class="depth2">메뉴 관리</span>
+						</div>
+						<div class="col">
+							<span class="color-blue">사용중</span>
+						</div>
+						<div class="col">
+							<button type="button" class="btn">수정</button>
+							<button type="button" class="btn">삭제</button>
+						</div>
+					</li>
+					<li>
+						<div class="col tal">
+							<span class="depth1"></span>
+						</div>
+						<div class="col tal">
+							<span class="depth2">메인 관리</span>
+						</div>
+						<div class="col">
+							<span class="color-blue">사용중</span>
+						</div>
+						<div class="col">
+							<button type="button" class="btn">수정</button>
+							<button type="button" class="btn">삭제</button>
+						</div>
+					</li>
+				</ul>
+				<script>
+					$(function(){
+						$("#sortable_01").sortable();
+					});
+				</script>
+				<!-- //드래그앤드롭 -->
+
+				<!-- 드래그앤드롭// -->
+				<h3 class="sortable-title">드로그앤드롭 depth2에만 적용</h3>
+				<ul class="sortable type2 column-4">
+					<!-- col 개수에 따라 숫자도 맞춰주세요. 2개일경우 column-2, 3개일경우 column-3... -->
+					<li>
+						<div class="col tal">
+							<span class="depth1">회원 관리</span>
+						</div>
+						<div class="col tal">
+							<span class="depth2"></span>
+						</div>
+						<div class="col">
+							<span class="color-blue">사용중</span>
+						</div>
+						<div class="col">
+							<button type="button" class="btn">수정</button>
+							<button type="button" class="btn">삭제</button>
+						</div>
+					</li>
+					<li>
+						<div class="col tal">
+							<span class="depth1">콘텐츠 관리</span>
+						</div>
+						<div class="col tal">
+							<span class="depth2"></span>
+						</div>
+						<div class="col">
+							<span class="color-blue">사용중</span>
+						</div>
+						<div class="col">
+							<button type="button" class="btn">수정</button>
+							<button type="button" class="btn">삭제</button>
+						</div>
+					</li>
+					<li>
+						<ul id="sortable_02" class="inner-column">
+							<li>
+								<div class="col tal">
+									<span class="depth1"></span>
+								</div>
+								<div class="col tal">
+									<span class="depth2">카테고리 관리</span>
+								</div>
+								<div class="col">
+									<span class="color-blue">사용중</span>
+								</div>
+								<div class="col">
+									<button type="button" class="btn">수정</button>
+									<button type="button" class="btn">삭제</button>
+								</div>
+							</li>
+							<li>
+								<div class="col tal">
+									<span class="depth1"></span>
+								</div>
+								<div class="col tal">
+									<span class="depth2">콘텐츠 관리</span>
+								</div>
+								<div class="col">
+									<span class="color-blue">사용중</span>
+								</div>
+								<div class="col">
+									<button type="button" class="btn">수정</button>
+									<button type="button" class="btn">삭제</button>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<div class="col tal">
+							<span class="depth1">사이트 관리</span>
+						</div>
+						<div class="col tal">
+							<span class="depth2"></span>
+						</div>
+						<div class="col">
+							<span class="color-blue">사용중</span>
+						</div>
+						<div class="col">
+							<button type="button" class="btn">수정</button>
+							<button type="button" class="btn">삭제</button>
+						</div>
+					</li>
+					<li>
+						<div class="col tal">
+							<span class="depth1">사이트 관리</span>
+						</div>
+						<div class="col tal">
+							<span class="depth2"></span>
+						</div>
+						<div class="col">
+							<span class="color-blue">사용중</span>
+						</div>
+						<div class="col">
+							<button type="button" class="btn">수정</button>
+							<button type="button" class="btn">삭제</button>
+						</div>
+
+						<ul id="sortable_03" class="inner-column">
+							<li>
+								<div class="col tal">
+									<span class="depth1"></span>
+								</div>
+								<div class="col tal">
+									<span class="depth2">공통 코드 관리</span>
+								</div>
+								<div class="col">
+									<span class="color-blue">사용중</span>
+								</div>
+								<div class="col">
+									<button type="button" class="btn">수정</button>
+									<button type="button" class="btn">삭제</button>
+								</div>
+							</li>
+							<li>
+								<div class="col tal">
+									<span class="depth1"></span>
+								</div>
+								<div class="col tal">
+									<span class="depth2">메뉴 관리</span>
+								</div>
+								<div class="col">
+									<span class="color-blue">사용중</span>
+								</div>
+								<div class="col">
+									<button type="button" class="btn">수정</button>
+									<button type="button" class="btn">삭제</button>
+								</div>
+							</li>
+							<li>
+								<div class="col tal">
+									<span class="depth1"></span>
+								</div>
+								<div class="col tal">
+									<span class="depth2">메인 관리</span>
+								</div>
+								<div class="col">
+									<span class="color-blue">사용중</span>
+								</div>
+								<div class="col">
+									<button type="button" class="btn">수정</button>
+									<button type="button" class="btn">삭제</button>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<script>
+					$(function(){
+						$("#sortable_02").sortable();
+						$("#sortable_03").sortable();
+					});
+				</script>
+				<!-- //드래그앤드롭 -->
+
+				<!-- 버튼// -->
+				<div class="btn-wrap">
+					<div class="fr"><!-- 오른쪽 정렬 : fr 클래스  -->
+						<button type="button" class="btn blue">등록</button>
+					</div>
+				</div>
+				<!-- //버튼 -->
+
+			</section>
+			<!-- //cont-body -->
+			
+		</div>
+		<!-- // content -->
+
+	</div>
+
+</body>
+</html>

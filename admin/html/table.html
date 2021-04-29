@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="IE=EDGE">
+	<meta name="Author" content="chowoobin">
+	<meta name="keywords" content="A Content">
+	<meta name="description" content="A Content">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>A Content 관리자</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/common.js"></script>
+
+	<!-- 가이드 확인용// -->
+	<style>
+		#wrap{padding:30px;}
+		.h3-title{margin-top:40px;}
+		.h3-title:first-child{margin-top:0;}
+		.list-style{margin-bottom:40px;}
+		.list-style li{font-size:16px;}
+	</style>
+	<!-- //가이드 확인용 -->
+</head>
+
+<body>
+	<div id="wrap">
+		
+
+		<h3 class="h3-title">description</h3>
+		<ul class="list-style">
+			<li>th 세로정렬 <span class="color-red">default는 vertical-align:middle</span></li>
+			<li>
+				th 세로정렬 조정이 필요하면 아래 클래스로 선언해주시면 됩니다.<br>
+				<span class="color-red">class="vt"</span> : vertical-align:top<br>
+				<span class="color-red">class="vm"</span> : vertical-align:middle<br>
+				<span class="color-red">class="vb"</span> : vertical-align:bottom
+			</li>
+		</ul>
+
+
+		<h3 class="h3-title">2단으로 나눠진 테이블</h3>
+
+		<!-- 테이블// -->
+		<table class="table">
+			<caption>표 제목</caption>
+			<colgroup>
+				<col style="width:18%;">
+				<col style="width:auto;">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row" class="vt">text</th>
+					<td>
+						<div class="text">
+							텍스트입니다.<br>
+							<strong>굵은 텍스트입니다. strong 태그로 감싸주세요.</strong><br>
+							<span class="color-blue">파랑칼라 텍스트입니다. color-blue 클래스 선언해주세요.</span><br>
+							<span class="color-red">레드칼라 텍스트입니다. color-red 클래스 선언해주세요.</span><br>
+							td 바로 밑에 텍스트만 넣을 경우 font-size:0으로 되어있어 안보입니다. 여기처럼 div.text로 감싸주세요.<br>
+							ex) &lt;div class="text"&gt;텍스트&lt;/div&gt;
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row" class="vt">list-style</th>
+					<td>
+						<ul class="list-style">
+							<li>리스트형입니다.</li>
+							<li>리스트형입니다.</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">button</th>
+					<td>
+						<a href="javascript:;" class="btn">default</a>
+						<a href="javascript:;" class="btn white">white</a>
+						<a href="javascript:;" class="btn gray">gray</a>
+						<a href="javascript:;" class="btn blue">blue</a>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">label badge</th>
+					<td>
+						<span class="label">텍스트</span>
+						<span class="label">텍스트텍스트</span>
+						<span class="label">텍스트텍스트텍스트</span>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">input[type="checkbox"]</th>
+					<td>
+						<input type="checkbox" id="chk_01"><label for="chk_01">default</label>
+						<input type="checkbox" id="chk_02" checked><label for="chk_02">checked</label><!-- 체크 -->
+						<input type="checkbox" id="chk_03" disabled><label for="chk_03">disabled</label><!-- 비활성화 -->
+						<input type="checkbox" id="chk_04" checked disabled><label for="chk_04">checked / disabled</label><!-- 체크비활성화 -->
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">input[type="radio"]</th>
+					<td>
+						<input type="radio" id="rdo_01" name="rdo_01"><label for="rdo_01">default</label>
+						<input type="radio" id="rdo_02" name="rdo_01" checked><label for="rdo_02">checked</label><!-- 체크 -->
+						<input type="radio" id="rdo_03" name="rdo_02" disabled><label for="rdo_03">disabled</label><!-- 비활성화 -->
+						<input type="radio" id="rdo_04" name="rdo_02" checked disabled><label for="rdo_04">checked / disabled</label><!-- 체크비활성화 -->
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">input[type="file"]</th>
+					<td>
+						<div class="filebox">
+							<input type="file" id="file_01" name="file_01" class="hidden">
+							<input class="upload-name" value="파일을 선택해주세요" disabled>
+							<label for="file_01">파일첨부</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">input[type="text"]</th>
+					<td>
+						<input type="text" style="width:20%;">
+						<input type="text" placeholder="placeholder" style="width:20%;">
+						<input type="text" value="value" style="width:20%;">
+						<input type="text" value="비활성화" disabled style="width:20%;"><!-- 비활성화 -->
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">select</th>
+					<td>
+						<div class="selectbox" style="width:20%;">
+							<select name="" id="" title="">
+								<option value="">default</option>
+								<option value="">option22</option>
+							</select>
+						</div>
+						<div class="selectbox" style="width:20%;">
+							<select name="" id="" title="">
+								<option value="">option</option>
+								<option value="" selected>selected</option><!-- 선택됨 : selected -->
+							</select>
+						</div>
+						<div class="selectbox" style="width:20%;">
+							<select name="" id="" title="" disabled><!-- 비활성화 -->
+								<option value="">비활성화</option>
+								<option value="">option22</option>
+							</select>
+						</div>
+						<div class="selectbox" style="width:20%;">
+							<select name="" id="" title="" disabled><!-- 비활성화 -->
+								<option value="">비활성화</option>
+								<option value="" selected>비활성화 selected</option><!-- 선택됨 : selected -->
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row" class="vt">textarea</th>
+					<td>
+						<textarea name="textarea_01" id="textarea_01"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row" class="vt">datepicker</th>
+					<td>
+						<!-- default// -->
+						<div class="datepicker" style="width:24.5%;">
+							<label for="datepicker_01">
+								<input type="text" id="datepicker_01" readonly>
+							</label>
+							
+							<script>
+								$(function(){
+									$("#datepicker_01").datepicker();
+								});
+							</script>
+						</div>
+						<!-- //default -->
+
+						<!-- 값이 있을 경우 : value 선언// -->
+						<div class="datepicker" style="width:24.5%;">
+							<label for="datepicker_02">
+								<input type="text" id="datepicker_02" value="2021-04-27" readonly>
+							</label>
+							
+							<script>
+								$(function(){
+									$("#datepicker_02").datepicker();
+								});
+							</script>
+						</div>
+						<!-- //값이 있을 경우 : value 선언 -->
+
+						<ul class="list-style">
+							<li>datepicker는 width:100%로 default되어있습니다.</li>
+							<li>별도로 width 조정이 필요하다면 inline-style로 width "%" 단위로 조정해주시면 됩니다.</li>
+							<li>datepicker input에 <strong>readonly 필수로 넣어주세요.</strong></li>
+							<li>현재 날짜는 회색글씨로 표시됩니다.</li>
+							<li>선택한 날짜는 파란색 백그라운드로 표시됩니다.</li>
+							<li>default 값이 있어야할 경우 value에 선언해주세요.<br>
+								ex) &lt;input type="text" <span class="color-red">value="2021-04-27" readonly</span>&gt;
+							</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row" class="vt">datepicker<br>시작일부터 종료일까지 경우</th>
+					<td>
+						<!-- 시작일부터 종료일까지 경우 : period 클래스 선언// -->
+						<div class="datepicker period" style="width:50%;">
+							<label for="datepicker_03">
+								<input type="text" id="datepicker_03" readonly>
+							</label>
+							<span class="hyppen">~</span>
+							<label for="datepicker_04">
+								<input type="text" id="datepicker_04" readonly>
+							</label>
+							
+							<script>
+								$(function(){
+									$("#datepicker_03").datepicker();
+									$("#datepicker_04").datepicker();
+								});
+							</script>
+						</div>
+						<!-- //시작일부터 종료일까지 경우 : period 클래스 선언 -->
+
+						<ul class="list-style">
+							<li>시작일부터 종료일까지 경우 datepicker에 period 클래스를 넣어주세요.</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">inputbox (input+검색)</th>
+					<td>
+						<div class="inputbox">
+							<input type="text" id="">
+							<label for="" class="hidden">입력해주세요.</label>
+							<a href="javascript:;" class="btn_search">검색하기</a>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">input / select</th>
+					<td>
+						<input type="text" style="width:49.5%;">
+						<div class="selectbox" style="width:49.5%;">
+							<select name="" id="">
+								<option value="">option</option>
+								<option value="">option22</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">input / inputbox</th>
+					<td>
+						<input type="text" style="width:49.5%;">
+						<div class="inputbox" style="width:49.5%;">
+							<input type="text" id="">
+							<label for="" class="hidden">입력해주세요.</label>
+							<a href="javascript:;" class="btn_search">검색하기</a>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row" class="vt">input / list-style</th>
+					<td>
+						<input type="text" id="">
+						<ul class="list-style">
+							<li>input, select, textarea는 width:100%로 default되어있습니다.</li>
+							<li>별도로 width 조정이 필요하다면 inline-style로 width <strong>"%" 단위로</strong> 조정해주시면 됩니다.</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">input / select / list-style<br>2단 : 49.5%</th>
+					<td>
+						<input type="text" style="width:49.5%;">
+						<div class="selectbox" style="width:49.5%;">
+							<select name="" id="">
+								<option value="">option</option>
+								<option value="">option22</option>
+							</select>
+						</div>
+						<ul class="list-style">
+							<li>[width] 2단 : 49.5% / 3단 : 32.6%</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">input / select / list-style<br>3단 : 32.6%</th>
+					<td>
+						<input type="text" style="width:32.6%;">
+						<input type="text" style="width:32.6%;">
+						<div class="selectbox" style="width:32.6%;">
+							<select name="" id="">
+								<option value="">option</option>
+								<option value="">option22</option>
+							</select>
+						</div>
+						<ul class="list-style">
+							<li>[width] 2단 : 49.5% / 3단 : 32.6%</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">input / 버튼</th>
+					<td>
+						<input type="text" id="" style="width:30%;">
+						<label for="" class="hidden">입력해주세요.</label>
+						<a href="javascript:;" class="btn">적용</a>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">title / select / 버튼</th>
+					<td>
+						<span class="title">title</span>
+						<div class="selectbox" style="width:30%;">
+							<select name="" id="" title="">
+								<option value="">option</option>
+								<option value="">option22</option>
+							</select>
+						</div>
+						<a href="javascript:;" class="btn">적용</a>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row" class="vt">multi line</th>
+					<td>
+						<div class="row">
+							<span class="title">title</span>
+							<div class="filebox" style="width:49.5%;">
+								<input type="file" id="file_02" name="file_02" class="hidden">
+								<input class="upload-name" value="파일을 선택해주세요" disabled>
+								<label for="file_02">파일첨부</label>
+							</div>
+						</div>
+						<div class="row">
+							<input type="text" style="width:49.5%;">
+							<div class="selectbox" style="width:49.5%;">
+								<select name="" id="">
+									<option value="">option</option>
+									<option value="">option22</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="datepicker period" style="width:49.5%">
+								<label for="datepicker_05">
+									<input type="text" id="datepicker_05" readonly>
+								</label>
+								<span class="hyppen">~</span>
+								<label for="datepicker_06">
+									<input type="text" id="datepicker_06" readonly>
+								</label>
+
+								<script>
+									$(function(){
+										$("#datepicker_05").datepicker();
+										$("#datepicker_06").datepicker();
+									});
+								</script>
+							</div>
+						</div>
+						<div class="row">
+							<input type="radio" id="rdo_05" name="rdo_05" checked><label for="rdo_05">radio</label>
+							<input type="radio" id="rdo_06" name="rdo_05"><label for="rdo_06">radio2</label>
+							<input type="radio" id="rdo_07" name="rdo_05"><label for="rdo_07">radio3</label>
+						</div>
+						<div class="row">
+							<textarea name="" id="" class="textarea"></textarea>
+							<ul class="list-style">
+								<li></li>
+								<li>multi line일 경우 한줄씩 그룹으로 감싸주세요.<br>
+									ex) <strong>&lt;div class="row"&gt;&lt;/div&gt;</strong>
+								</li>
+							</ul>
+						</div>
+						<div class="row">
+							<a href="javascript:;" class="btn">default</a>
+							<a href="javascript:;" class="btn white">white</a>
+							<a href="javascript:;" class="btn gray">gray</a>
+							<a href="javascript:;" class="btn blue">blue</a>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- //테이블 -->
+
+
+		<h3 class="h3-title">4단으로 나눠진 테이블</h3>
+
+		<!-- 테이블// -->
+		<table class="table">
+			<caption>표 제목</caption>
+			<colgroup>
+				<col style="width:18%;">
+				<col style="width:32%;">
+				<col style="width:18%;">
+				<col style="width:32%;">
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row">텍스트</th>
+					<td>
+						<div class="text">텍스트입니다.</div>
+					</td>
+					<th scope="row">list-style</th>
+					<td>
+						<ul class="list-style">
+							<li>리스트형입니다.</li>
+							<li>리스트형입니다.</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">input[type="checkbox"]</th>
+					<td>
+						<input type="checkbox" id="chk_05"><label for="chk_05">default</label>
+						<input type="checkbox" id="chk_06" checked><label for="chk_06">checked</label><!-- 체크 -->
+						<input type="checkbox" id="chk_07" disabled><label for="chk_07">disabled</label><!-- 비활성화 -->
+						<input type="checkbox" id="chk_08" checked disabled><label for="chk_08">checked / disabled</label><!-- 체크비활성화 -->
+					</td>
+					<th scope="row">input[type="radio"]</th>
+					<td>
+						<input type="radio" id="rdo_08" name="rdo_08"><label for="rdo_08">default</label>
+						<input type="radio" id="rdo_09" name="rdo_08" checked><label for="rdo_09">checked</label><!-- 체크 -->
+						<input type="radio" id="rdo_10" name="rdo_10" disabled><label for="rdo_10">disabled</label><!-- 비활성화 -->
+						<input type="radio" id="rdo_11" name="rdo_10" checked disabled><label for="rdo_11">checked / disabled</label><!-- 체크비활성화 -->
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">input[type="text"]</th>
+					<td>
+						<input type="text">
+					</td>
+					<th scope="row">select</th>
+					<td>
+						<div class="selectbox">
+							<select name="" id="" title="">
+								<option value="">default</option>
+								<option value="">option22</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">inputbox (input+검색)</th>
+					<td>
+						<div class="inputbox">
+							<input type="text" id="">
+							<label for="" class="hidden">입력해주세요.</label>
+							<a href="javascript:;" class="btn_search">검색하기</a>
+						</div>
+					</td>
+					<th scope="row">input[type="file"]</th>
+					<td>
+						<div class="filebox">
+							<input type="file" id="file_03" name="file_03" class="hidden">
+							<input class="upload-name" value="파일을 선택해주세요" disabled>
+							<label for="file_03">파일첨부</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">datepicker</th>
+					<td>
+						<!-- default// -->
+						<div class="datepicker">
+							<label for="datepicker_07">
+								<input type="text" id="datepicker_07" readonly>
+							</label>
+							
+							<script>
+								$(function(){
+									$("#datepicker_07").datepicker();
+								});
+							</script>
+						</div>
+						<!-- //default -->
+					</td>
+					<th scope="row">datepicker<br>시작일부터 종료일까지 경우</th>
+					<td>
+						<!-- 시작일부터 종료일까지 경우 : period 클래스 선언// -->
+						<div class="datepicker period">
+							<label for="datepicker_08">
+								<input type="text" id="datepicker_08" readonly>
+							</label>
+							<span class="hyppen">~</span>
+							<label for="datepicker_09">
+								<input type="text" id="datepicker_09" readonly>
+							</label>
+							
+							<script>
+								$(function(){
+									$("#datepicker_08").datepicker();
+									$("#datepicker_09").datepicker();
+								});
+							</script>
+						</div>
+						<!-- //시작일부터 종료일까지 경우 : period 클래스 선언 -->
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">input / select</th>
+					<td>
+						<input type="text" style="width:49.5%;">
+						<div class="selectbox" style="width:49.5%;">
+							<select name="" id="">
+								<option value="">option</option>
+								<option value="">option22</option>
+							</select>
+						</div>
+					</td>
+					<th scope="row">input / list-style</th>
+					<td>
+						<input type="text" id="">
+						<ul class="list-style">
+							<li>리스트형입니다.</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">input / 버튼</th>
+					<td>
+						<input type="text" id="" style="width:79%;">
+						<label for="" class="hidden">입력해주세요.</label>
+						<a href="javascript:;" class="btn">적용</a>
+					</td>
+					<th scope="row">title / select / 버튼</th>
+					<td>
+						<span class="title">title</span>
+						<div class="selectbox" style="width:67%;">
+							<select name="" id="" title="">
+								<option value="">option</option>
+								<option value="">option22</option>
+							</select>
+						</div>
+						<a href="javascript:;" class="btn">적용</a>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">textarea</th>
+					<td colspan="3">
+						<textarea name="textarea_01" id="textarea_01"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row" class="vt">multi line</th>
+					<td colspan="3">
+						<div class="row">
+							<span class="title">title</span>
+							<div class="filebox" style="width:44%;">
+								<input type="file" id="file_02" name="file_02" class="hidden">
+								<input class="upload-name" value="파일을 선택해주세요" disabled>
+								<label for="file_02">파일첨부</label>
+							</div>
+						</div>
+						<div class="row">
+							<input type="text" style="width:49.5%;">
+							<div class="selectbox" style="width:49.5%;">
+								<select name="" id="">
+									<option value="">option</option>
+									<option value="">option22</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<textarea name="" id="" class="textarea"></textarea>
+							<ul class="list-style">
+								<li></li>
+								<li>multi line일 경우 한줄씩 그룹으로 감싸주세요.<br>
+									ex) <strong>&lt;div class="row"&gt;&lt;/div&gt;</strong>
+								</li>
+							</ul>
+						</div>
+						<div class="row">
+							<a href="javascript:;" class="btn">default</a>
+							<a href="javascript:;" class="btn white">white</a>
+							<a href="javascript:;" class="btn gray">gray</a>
+							<a href="javascript:;" class="btn blue">blue</a>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- //테이블 -->
+
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="IE=EDGE">
+	<meta name="Author" content="chowoobin">
+	<meta name="keywords" content="A Content">
+	<meta name="description" content="A Content">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>A Content 관리자</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/common.js"></script>
+
+	<!-- 가이드 확인용// -->
+	<style>
+		#wrap{padding:30px;}
+		.list-style{margin-bottom:40px;}
+		.list-style li{font-size:16px;}
+	</style>
+	<!-- //가이드 확인용 -->
+</head>
+
+<body>
+	
+	<div id="wrap">
+
+		<h3 class="h3-title">description</h3>
+		<ul class="list-style">
+			<li>팝업에 id값 임시로 넣어 수정 가능합니다.</li>
+			<li class="color-red">각 팝업별로 id값 다르게 부여해주세요.</li>
+			<li class="color-red">팝업 열기/닫기 onclick에 id값 통일해주시면 정상 작동됩니다.</li>
+			<li>팝업 넓이 default : 900px입니다.</li>
+			<li class="color-red">width 조정 필요시 inline-style로 픽셀값으로 넣어주세요.(너비숫자는 100단위로 넣어주세요.)</li>
+			<li>ex) &lt;div class="innerarea" style="max-width:600px"&gt;</li>
+		</ul>
+		<!-- 버튼// -->
+		<button type="button" class="btn" onclick="fn.popupOpen('#popup01');">팝업 열기</button>
+		<!-- //버튼 -->
+
+	</div>
+
+	<!-- 팝업// -->
+	<div id="popup01" class="poplayer"><!-- id값 수정 가능 -->
+		<div class="innerarea"><!-- width 조정 필요시 style="max-width:숫자px"로 넣어주세요. -->
+			<div class="inner">
+				<header>
+					<h2>head</h2>
+				</header>
+				<div class="cont">
+					<div class="cont-inner">
+						contents
+					</div>
+				</div>
+				<button type="button" class="btn_popclose" onclick="fn.popupClose('#popup01');"><span class="hidden">팝업닫기</span></button>
+			</div>
+		</div>
+	</div>
+	<!-- //팝업 -->
+
+</body>
+</html>

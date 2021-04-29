@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="IE=EDGE">
+	<meta name="Author" content="chowoobin">
+	<meta name="keywords" content="A Content">
+	<meta name="description" content="A Content">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>A Content 관리자</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/common.js"></script>
+
+</head>
+
+<body>
+	<div id="wrap">
+
+		<!-- lnb// -->
+		<div id="lnb">
+			<h1><a href="javascript:;">A-Content</a></h1>
+			<nav>
+				<ul>
+					<li><!-- 현재페이지 : li class="active" 추가 -->
+						<a href="javascript:;" class="depth1">1depth</a>
+						<div class="inner-menu">
+							<ul>
+								<li><a href="javascript:;">2depth</a></li><!-- 현재페이지 : li class="active" 추가 -->
+								<li><a href="javascript:;">2depth</a></li>
+								<li><a href="javascript:;">2depth</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;" class="depth1">1depth</a>
+						<div class="inner-menu">
+							<ul>
+								<li><a href="javascript:;">2depth</a></li>
+								<li><a href="javascript:;">2depth</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;" class="depth1">1depth</a>
+						<div class="inner-menu">
+							<ul>
+								<li><a href="javascript:;">2depth</a></li>
+								<li><a href="javascript:;">2depth</a></li>
+								<li><a href="javascript:;">2depth</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!-- //lnb -->
+
+		<!-- content// -->
+		<div id="content">
+
+			<!-- cont-head// -->
+			<section class="cont-head">
+				<p><em>관리자님</em> 환영합니다. 마지막 접속일 : 2021.04.20. 14:31</p>
+				<div class="util">
+					<a href="javascript:;" class="btn logout">로그아웃</a>
+				</div>
+			</section>
+			<!-- //cont-head -->
+
+			<!-- cont-body// -->
+			<section class="cont-body">
+
+				<!-- 소제목 영역// -->
+				<h2 class="h2-title">회원관리</h2>
+				<!-- //소제목 영역 -->
+
+				<!-- 테이블// -->
+				<table class="table">
+					<caption>표 제목</caption>
+					<colgroup>
+						<col style="width:18%;">
+						<col style="width:32%;">
+						<col style="width:18%;">
+						<col style="width:32%;">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">아이디</th>
+							<td>
+								<div class="text">abc123</div>
+							</td>
+							<th scope="row">ABO 7</th>
+							<td>
+								<div class="text">7480000</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">이름</th>
+							<td>
+								<div class="text">박보영</div>
+							</td>
+							<th scope="row">성별</th>
+							<td>
+								<div class="text">여</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">생년월일</th>
+							<td>
+								<div class="text">1990.02.12</div>
+							</td>
+							<th scope="row">전화번호</th>
+							<td>
+								<div class="text">031-1111-2222</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">이메일</th>
+							<td>
+								<div class="text">boyoung.Park@gmail.com</div>
+							</td>
+							<th scope="row">휴대폰 번호</th>
+							<td>
+								<div class="text">010-0000-0000</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">주소</th>
+							<td colspan="3">
+								<div class="text">서울시 강남구 논현로 142길 35 BH엔터테인먼트</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4">&nbsp;</td>
+						</tr>
+						<tr>
+							<th scope="row">선호 카테고리</th>
+							<td colspan="3">
+								<span class="label">NUTRILITE</span>
+								<span class="label">ARTISTRY</span>
+								<span class="label">ATMOSPHERE</span>
+								<span class="label">SKY</span>
+								<span class="label">영양건강</span>
+								<span class="label">홈리빙</span>
+								<span class="label">사업현황</span>
+								<span class="label">보상</span>
+								<span class="label">프로그램</span>
+								<span class="label">체험예약</span>
+								<span class="label">사업</span>
+								<span class="label">가이드</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">콘텐츠 조회</th>
+							<td>
+								<div class="text">32</div>
+							</td>
+							<th scope="row">좋아요</th>
+							<td>
+								<div class="text">13</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">즐겨찾기</th>
+							<td>
+								<div class="text">312</div>
+							</td>
+							<th scope="row">공유</th>
+							<td>
+								<div class="text">312</div>
+								<button type="button" class="btn">공유현황</button>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">마지막 접속일</th>
+							<td>
+								<div class="text">2021.04.20 15:30</div>
+							</td>
+							<th scope="row">약관동의여부</th>
+							<td>
+								<div class="text">동의 완료</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- //테이블 -->
+
+				<!-- 버튼// -->
+				<div class="btn-wrap">
+					<div class="fl"><!-- 왼쪽 정렬 : fl 클래스 -->
+						<button type="button" class="btn gray">목록</button>
+					</div>
+					<div class="fr"><!-- 오른쪽 정렬 : fr 클래스  -->
+						<button type="button" class="btn white">삭제</button>
+						<button type="button" class="btn blue">수정</button>
+					</div>
+				</div>
+				<!-- //버튼 -->
+
+			</section>
+			<!-- //cont-body -->
+			
+		</div>
+		<!-- // content -->
+
+	</div>
+
+</body>
+</html>

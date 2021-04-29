@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="IE=EDGE">
+	<meta name="Author" content="chowoobin">
+	<meta name="keywords" content="A Content">
+	<meta name="description" content="A Content">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>A Content 관리자</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<script src="../js/jquery-2.1.1.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/common.js"></script>
+
+</head>
+
+<body>
+	<div id="wrap">
+
+		<!-- lnb// -->
+		<div id="lnb">
+			<h1><a href="javascript:;">A-Content</a></h1>
+			<nav>
+				<ul>
+					<li><!-- 현재페이지 : li class="active" 추가 -->
+						<a href="javascript:;" class="depth1">1depth</a>
+						<div class="inner-menu">
+							<ul>
+								<li><a href="javascript:;">2depth</a></li><!-- 현재페이지 : li class="active" 추가 -->
+								<li><a href="javascript:;">2depth</a></li>
+								<li><a href="javascript:;">2depth</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;" class="depth1">1depth</a>
+						<div class="inner-menu">
+							<ul>
+								<li><a href="javascript:;">2depth</a></li>
+								<li><a href="javascript:;">2depth</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;" class="depth1">1depth</a>
+						<div class="inner-menu">
+							<ul>
+								<li><a href="javascript:;">2depth</a></li>
+								<li><a href="javascript:;">2depth</a></li>
+								<li><a href="javascript:;">2depth</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!-- //lnb -->
+
+		<!-- content// -->
+		<div id="content">
+
+			<!-- cont-head// -->
+			<section class="cont-head">
+				<p><em>관리자님</em> 환영합니다. 마지막 접속일 : 2021.04.20. 14:31</p>
+				<div class="util">
+					<a href="javascript:;" class="btn logout">로그아웃</a>
+				</div>
+			</section>
+			<!-- //cont-head -->
+
+			<!-- cont-body// -->
+			<section class="cont-body">
+
+				<!-- 소제목 영역// -->
+				<h2 class="h2-title">콘텐츠관리</h2>
+				<!-- //소제목 영역 -->
+
+				<!-- 테이블// -->
+				<table class="table">
+					<caption>표 제목</caption>
+					<colgroup>
+						<col style="width:18%;">
+						<col style="width:auto;">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">카테고리</th>
+							<td>
+								<!-- 시작일부터 종료일까지 경우 : period 클래스 선언// -->
+								<div class="datepicker period" style="width:50%;">
+									<label for="datepicker_03">
+										<input type="text" id="datepicker_03" readonly>
+									</label>
+									<span class="hyppen">~</span>
+									<label for="datepicker_04">
+										<input type="text" id="datepicker_04" readonly>
+									</label>
+									
+									<script>
+										$(function(){
+											$("#datepicker_03").datepicker();
+											$("#datepicker_04").datepicker();
+										});
+									</script>
+								</div>
+								<!-- //시작일부터 종료일까지 경우 : period 클래스 선언 -->
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">제목</th>
+							<td>
+								<input type="text">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">시리즈</th>
+							<td>
+								<input type="text">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="2">썸네일</th>
+							<td>
+								<span class="title" style="width:45px;">PC</span>
+								<div class="filebox" style="width:49.5%;">
+									<input type="file" id="file_01" name="file_01" class="hidden">
+									<input class="upload-name" value="파일을 선택해주세요" disabled>
+									<label for="file_01">파일첨부</label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="title" style="width:45px;">Mobile</span>
+								<div class="filebox" style="width:49.5%;">
+									<input type="file" id="file_02" name="file_02" class="hidden">
+									<input class="upload-name" value="파일을 선택해주세요" disabled>
+									<label for="file_02">파일첨부</label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">콘텐츠등록</th>
+							<td>
+								<div class="filebox" style="width:49.5%;">
+									<input type="file" id="file_03" name="file_03" class="hidden">
+									<input class="upload-name" value="파일을 선택해주세요" disabled>
+									<label for="file_03">파일첨부</label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">해당 URL</th>
+							<td>
+								<input type="text">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">해시태그</th>
+							<td>
+								<input type="text">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" class="vt">내용</th>
+							<td>
+								<textarea name="textarea_01" id="textarea_01"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">관련 콘텐츠</th>
+							<td>
+								<a href="javascript:;" class="btn">콘텐츠 선택</a>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">관련 상품</th>
+							<td>
+								<a href="javascript:;" class="btn">상품 정보 입력</a>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">상태</th>
+							<td>
+								<div class="selectbox" style="width:20%;">
+									<select name="" id="" title="" disabled><!-- 비활성화 -->
+										<option value="">등록대기</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- //테이블 -->
+
+				<!-- 버튼// -->
+				<div class="btn-wrap">
+					<div class="fl"><!-- 왼쪽 정렬 : fl 클래스 -->
+						<button type="button" class="btn gray">목록</button>
+					</div>
+					<div class="fr"><!-- 오른쪽 정렬 : fr 클래스  -->
+						<button type="button" class="btn blue">저장</button>
+					</div>
+				</div>
+				<!-- //버튼 -->
+
+			</section>
+			<!-- //cont-body -->
+			
+		</div>
+		<!-- // content -->
+
+	</div>
+
+</body>
+</html>

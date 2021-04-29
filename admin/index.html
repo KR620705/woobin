@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>A-Content 관리자</title>
+    <style>
+      body{font-family:sans-serif, Malgungothic, "맑은고딕", Dotum, "돋움";}
+      h1{margin-bottom:20px;font-size:26px;text-align:center;}
+      table {width:100%; border-collapse:collapse;}
+      table.guideTbl01 {margin-top:10px;text-align:center;border-top:2px #326dc2 solid;}
+      table.guideTbl01 tr > th, table.guideTbl01 tr > td {padding:10px; border-left:1px #dedede solid; border-top:1px #dedede solid;vertical-align:top;}
+      table.guideTbl01 tr > th:first-child, table.guideTbl01 tr > td:first-child{border-left:none;}
+      table.guideTbl01 thead tr:first-child > th,
+      table.guideTbl01 tbody tr:first-child > th,
+      table.guideTbl01 tbody tr:first-child > td {border-top:none;}
+      table.guideTbl01 thead tr > th {background:#eee; font-size:13px;}
+      table.guideTbl01 tbody tr > th {background:#f9f9f9;}
+      table.guideTbl01 thead tr > th {color:#000; font-weight:bold;}
+      table.guideTbl01 tbody {font-size:12px; border-bottom:1px #ccc solid; border-top:1px #ccc solid;}
+      table#focus thead tr > th {padding:15px 10px;}
+      table#focus tbody tr > th {padding:10px;}
+      table#focus tbody tr > td {padding:10px;}
+      .alC {text-align:center !important;}
+      .alL {text-align:left !important;}
+      .alR {text-align:right !important;}
+      .vertical_t {vertical-align:top !important;}
+      .wrap_tbl{min-width:980px;padding:0 10px;margin:0 auto;box-sizing: border-box;}
+      .chk th,
+      .chk td{color: blue !important;}
+      tbody.add th,
+      tbody.add td{color:#00a383 !important;}
+      tbody.add2 th,
+      tbody.add2 td{color:#a38300 !important;}
+      .red{color:#f00 !important;}
+  </style>
+  
+	<script src="js/jquery-2.1.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".num").each(function(index){
+        index+=1;
+        $(this).text(index);
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <h1>A-Content 관리자 INDEX</h1>
+  <div class="wrap_tbl">
+    <table id="focus" class="guideTbl01">
+      <colgroup>
+        <col width="5%" />
+        <col width="10%" />
+        <col width="15%" />
+        <col width="15%" />
+        <col width="10%" />
+        <col width="10%" />
+        <col width="25%" />
+        <col width="10%" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col">번호</th>
+          <th scope="col">1Depth</th>
+          <th scope="col">2Depth</th>
+          <th scope="col">html</th>
+          <th scope="col">완료</th>
+          <th scope="col">수정일자</th>
+          <th scope="col">비고</th>
+          <th scope="col">LINK</th>
+        </tr>
+      </thead>
+      <!--  1depth 구분은 tbody로 함 -->
+      <!--  1depth가 1SET 임 -->
+      <tbody>
+        <tr>
+          <th scope="row" class="num"></th>
+          <td class="alL">로그인</td>
+          <td class="alL"></td>
+          <td class="alL">login.html</td>
+          <td>2021-04-29</td>
+          <td></td>
+          <td class="alL red"></td>
+          <td class="alC"><a href="html/login.html" target="_blank">페이지이동</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="num"></th>
+          <td class="alL">메인</td>
+          <td class="alL"></td>
+          <td class="alL">main.html</td>
+          <td></td>
+          <td></td>
+          <td class="alL red"></td>
+          <td class="alC"><a href="html/main.html" target="_blank">페이지이동</a></td>
+        </tr>
+        <tr>
+          <th class="alL" colspan="2" rowspan="7" class="alL">가이드</th>
+          <td class="alL">타이틀</td>
+          <td class="alL">title.html</td>
+          <td>2021-04-27</td>
+          <td></td>
+          <td class="alL red"></td>
+          <td class="alC"><a href="html/title.html" target="_blank">페이지이동</a></td>
+        </tr>
+        <tr>
+          <td class="alL">버튼</td>
+          <td class="alL">button.html</td>
+          <td>2021-04-27</td>
+          <td></td>
+          <td class="alL red"></td>
+          <td class="alC"><a href="html/button.html" target="_blank">페이지이동</a></td>
+        </tr>
+        <tr>
+          <td class="alL">테이블</td>
+          <td class="alL">table.html</td>
+          <td>2021-04-27</td>
+          <td></td>
+          <td class="alL red"></td>
+          <td class="alC"><a href="html/table.html" target="_blank">페이지이동</a></td>
+        </tr>
+        <tr>
+          <td class="alL">그리드</td>
+          <td class="alL">grid.html</td>
+          <td>2021-04-27</td>
+          <td></td>
+          <td class="alL red"></td>
+          <td class="alC"><a href="html/grid.html" target="_blank">페이지이동</a></td>
+        </tr>
+        <tr>
+          <td class="alL">sortable</td>
+          <td class="alL">sortable.html</td>
+          <td>2021-04-29</td>
+          <td></td>
+          <td class="alL red"></td>
+          <td class="alC"><a href="html/sortable.html" target="_blank">페이지이동</a></td>
+        </tr>
+        <tr>
+          <td class="alL">lnb</td>
+          <td class="alL">lnb.html</td>
+          <td>2021-04-27</td>
+          <td></td>
+          <td class="alL red"></td>
+          <td class="alC"><a href="html/lnb.html" target="_blank">페이지이동</a></td>
+        </tr>
+        <tr>
+          <td class="alL">팝업</td>
+          <td class="alL">popup.html</td>
+          <td>2021-04-29</td>
+          <td></td>
+          <td class="alL red"></td>
+          <td class="alC"><a href="html/popup.html" target="_blank">페이지이동</a></td>
+        </tr>
+        <tr>
+          <th scope="row" colspan="2" rowspan="5" class="alL">레이아웃</th>
+          <td class="alL">목록</td>
+          <td class="alL">layout_list.html</td>
+          <td>2021-04-29</td>
+          <td></td>
+          <td class="alL red"></td>
+          <td class="alC"><a href="html/layout_list.html" target="_blank">페이지이동</a></td>
+        </tr>
+        <tr>
+          <td class="alL">상세</td>
+          <td class="alL">layout_detail.html</td>
+          <td>2021-04-29</td>
+          <td></td>
+          <td class="alL red"></td>
+          <td class="alC"><a href="html/layout_detail.html" target="_blank">페이지이동</a></td>
+        </tr>
+        <tr>
+          <td class="alL">등록</td>
+          <td class="alL">layout_enroll.html</td>
+          <td>2021-04-29</td>
+          <td></td>
+          <td class="alL red"></td>
+          <td class="alC"><a href="html/layout_enroll.html" target="_blank">페이지이동</a></td>
+        </tr>
+        <tr>
+          <td class="alL">팝업</td>
+          <td class="alL">layout_popup.html</td>
+          <td>2021-04-29</td>
+          <td></td>
+          <td class="alL red"></td>
+          <td class="alC"><a href="html/layout_popup.html" target="_blank">페이지이동</a></td>
+        </tr>
+        <tr>
+          <td class="alL">드래그로 순서정렬</td>
+          <td class="alL">layout_sortable.html</td>
+          <td>2021-04-29</td>
+          <td></td>
+          <td class="alL red"></td>
+          <td class="alC"><a href="html/layout_sortable.html" target="_blank">페이지이동</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
