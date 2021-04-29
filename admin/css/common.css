@@ -264,7 +264,6 @@ textarea:hover{border-color:#222;}
 */
 
 /* login */
-#login{}
 #login .login-inner{position:absolute;top:50%;left:50%;width:400px;margin-top:-200px;margin-left:-200px;text-align:center;}
 #login .login-inner .logo{margin-bottom:30px;}
 #login .login-inner input{height:45px;margin-top:10px;margin-left:0;}
@@ -273,7 +272,7 @@ textarea:hover{border-color:#222;}
 /* sortable */
 .sortable-title{margin-top:20px;padding:10px 50px;background:#f2f2f2;border-top:2px solid #333;border-bottom:1px solid #ccc;}
 .sortable{text-align:center;}
-.sortable > li{margin-top:-1px;padding:10px 50px;background:#fff url("../img/bg_drag.png") no-repeat 96% 50%;font-size:0;border-top:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6;cursor:move;overflow:hidden;}
+.sortable > li{margin-top:-1px;padding:10px 50px;background:#fff url("../img/bg_drag.png") no-repeat 97% 50%;font-size:0;border-top:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6;cursor:move;overflow:hidden;}
 .sortable .col{display:inline-block;font-size:13px;}
 .sortable.column-2 .col{width:50%;}
 .sortable.column-3 .col{width:33%;}
