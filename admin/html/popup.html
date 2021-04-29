@@ -18,8 +18,8 @@
 	<!-- 가이드 확인용// -->
 	<style>
 		#wrap{padding:30px;}
-		.list-style{margin-bottom:40px;}
-		.list-style li{font-size:16px;}
+		.h3-title + .list-style{margin-bottom:40px;}
+		.h3-title + .list-style li{font-size:16px;}
 	</style>
 	<!-- //가이드 확인용 -->
 </head>
@@ -45,18 +45,16 @@
 
 	<!-- 팝업// -->
 	<div id="popup01" class="poplayer"><!-- id값 수정 가능 -->
-		<div class="innerarea"><!-- width 조정 필요시 style="max-width:숫자px"로 넣어주세요. -->
-			<div class="inner">
-				<header>
-					<h2>head</h2>
-				</header>
-				<div class="cont">
-					<div class="cont-inner">
-						contents
-					</div>
+		<div class="inner"><!-- width 조정 필요시 style="max-width:숫자px"로 넣어주세요. -->
+			<header>
+				<h2>head</h2>
+			</header>
+			<div class="cont">
+				<div class="cont-inner">
+					contents
 				</div>
-				<button type="button" class="btn_popclose" onclick="fn.popupClose('#popup01');"><span class="hidden">팝업닫기</span></button>
 			</div>
+			<button type="button" class="btn_popclose" onclick="fn.popupClose('#popup01');"><span class="hidden">팝업닫기</span></button>
 		</div>
 	</div>
 	<!-- //팝업 -->

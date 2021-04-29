@@ -214,6 +214,7 @@ textarea:hover{border-color:#222;}
 /* table */
 .table + .table{margin-top:30px;}
 .table{position:relative;margin-top:20px;border-top:2px solid #333;}
+.table thead th{position:relative;padding:12px 15px;background-color:#f2f2f2;color:#222;font-size:13px;font-weight:normal;text-align:center;vertical-align:middle;border-bottom:1px solid #ccc;border-right:1px solid #ccc;}
 .table tbody th{position:relative;padding:12px 15px;background-color:#f2f2f2;color:#222;font-size:13px;font-weight:normal;text-align:left;vertical-align:middle;border-bottom:1px solid #ccc;border-right:1px solid #ccc;}
 .table tbody td{position:relative;padding:8px 15px;color:#222;font-size:0;text-align:left;vertical-align:middle;line-height:1.4;border-bottom:1px solid #ccc;border-right:1px solid #ccc;}
 .table tbody td:last-child{border-right:none;}
@@ -225,6 +226,7 @@ textarea:hover{border-color:#222;}
 .table .title:first-child{margin-left:0;}
 .table .title + .filebox{margin-left:1%;}
 .table .btn{min-width:55px;height:36px;border-radius:3px;}
+.table .grid-wrap{margin-top:0;}
 
 /* grid */
 .grid-wrap{margin-top:20px;border-bottom:1px solid #ccc;overflow-y:auto;}

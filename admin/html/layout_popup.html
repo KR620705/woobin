@@ -35,189 +35,189 @@
 
 	<!-- 팝업// -->
 	<div id="popup01" class="poplayer"><!-- id값 수정 가능 -->
-			<div class="inner"><!-- width 조정 필요시 style="max-width:숫자px"로 넣어주세요. -->
-				<header>
-					<h2>콘텐츠 선택</h2>
-				</header>
-				<div class="cont">
-					
-					<!-- 테이블// -->
-					<table class="table">
-						<caption>표 제목</caption>
+		<div class="inner"><!-- width 조정 필요시 style="max-width:숫자px"로 넣어주세요. -->
+			<header>
+				<h2>콘텐츠 선택</h2>
+			</header>
+			<div class="cont">
+				
+				<!-- 테이블// -->
+				<table class="table">
+					<caption>표 제목</caption>
+					<colgroup>
+						<col style="width:18%;">
+						<col style="width:32%;">
+						<col style="width:18%;">
+						<col style="width:32%;">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">제목</th>
+							<td>
+								<input type="text">
+							</td>
+							<th scope="row">시리즈</th>
+							<td>
+								<input type="text">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">카테고리</th>
+							<td colspan="3">
+								<!-- 시작일부터 종료일까지 경우 : period 클래스 선언// -->
+								<div class="datepicker period" style="width:50%;">
+									<label for="datepicker_03">
+										<input type="text" id="datepicker_03" readonly>
+									</label>
+									<span class="hyppen">~</span>
+									<label for="datepicker_04">
+										<input type="text" id="datepicker_04" readonly>
+									</label>
+									
+									<script>
+										$(function(){
+											$("#datepicker_03").datepicker();
+											$("#datepicker_04").datepicker();
+										});
+									</script>
+								</div>
+								<!-- //시작일부터 종료일까지 경우 : period 클래스 선언 -->
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- //테이블 -->
+
+				<!-- 버튼// -->
+				<div class="btn-wrap">
+					<div class="fr"><!-- 오른쪽 정렬 : fr 클래스  -->
+						<button type="button" class="btn gray">검색</button>
+					</div>
+				</div>
+				<!-- //버튼 -->
+				
+				<!-- 그리드// -->
+				<div class="grid-wrap" style="max-height:300px;"><!-- scroll 기능 필요시 style="max-height:숫자px;" 선언해주세요. -->
+					<table class="grid">
+						<caption>그리드 정보</caption>
 						<colgroup>
-							<col style="width:18%;">
-							<col style="width:32%;">
-							<col style="width:18%;">
-							<col style="width:32%;">
+							<col style="width:10%;">
+							<col style="width:auto;">
+							<col style="width:30%;">
+							<col style="width:25%;">
 						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col"><input type="checkbox" id="checkbox_all"><label for="checkbox_all"></label></th>
+								<th scope="col">제목</th>
+								<th scope="col">시리즈</th>
+								<th scope="col">카테고리</th>
+							</tr>
+						</thead>
 						<tbody>
+							<!-- 데이터가 있을 경우// -->
+
+							<tr class="mark"><!-- 추가되어 있는 경우 : tr class="mark" -->
+								<td><input type="checkbox" id="checkbox_01"><label for="checkbox_01"></label></td>
+								<td class="tal">저세상 다이어트로 생기를 잃은 그녀를 구해라!</td>
+								<td class="tal">[프로그램 시리즈명의 위치] 26화</td>
+								<td>Business > 뉴핀 성취자 > 건강</td>
+							</tr>
+
 							<tr>
-								<th scope="row">제목</th>
-								<td>
-									<input type="text">
-								</td>
-								<th scope="row">시리즈</th>
-								<td>
-									<input type="text">
-								</td>
+								<td><input type="checkbox" id="checkbox_02"><label for="checkbox_02"></label></td>
+								<td class="tal">모든 장면이 킬포! 코시국 집순이 관찰 카메라</td>
+								<td class="tal">[프로그램 시리즈명의 위치] 25화</td>
+								<td>Business > 뉴핀 성취자 > 건강</td>
+							</tr>
+							<tr class="mark">
+								<td><input type="checkbox" id="checkbox_03"><label for="checkbox_03"></label></td>
+								<td class="tal">처음 만나는 감각적인 샤워</td>
+								<td class="tal">[프로그램 시리즈명의 위치] 25화</td>
+								<td>Business > 뉴핀 성취자 > 건강</td>
 							</tr>
 							<tr>
-								<th scope="row">카테고리</th>
-								<td colspan="3">
-									<!-- 시작일부터 종료일까지 경우 : period 클래스 선언// -->
-									<div class="datepicker period" style="width:50%;">
-										<label for="datepicker_03">
-											<input type="text" id="datepicker_03" readonly>
-										</label>
-										<span class="hyppen">~</span>
-										<label for="datepicker_04">
-											<input type="text" id="datepicker_04" readonly>
-										</label>
-										
-										<script>
-											$(function(){
-												$("#datepicker_03").datepicker();
-												$("#datepicker_04").datepicker();
-											});
-										</script>
-									</div>
-									<!-- //시작일부터 종료일까지 경우 : period 클래스 선언 -->
-								</td>
+								<td><input type="checkbox" id="checkbox_04"><label for="checkbox_04"></label></td>
+								<td class="tal">스킨 케어에서, 스킨 뉴트리션으로</td>
+								<td class="tal">[프로그램 시리즈명의 위치] 25화</td>
+								<td>Business > 뉴핀 성취자 > 건강</td>
 							</tr>
+							<tr>
+								<td><input type="checkbox" id="checkbox_05"><label for="checkbox_05"></label></td>
+								<td class="tal">극과 극 모녀</td>
+								<td class="tal">[프로그램 시리즈명의 위치] 25화</td>
+								<td>Business > 뉴핀 성취자 > 건강</td>
+							</tr>
+							<!-- //데이터가 있을 경우 -->
 						</tbody>
 					</table>
-					<!-- //테이블 -->
-
-					<!-- 버튼// -->
-					<div class="btn-wrap">
-						<div class="fr"><!-- 오른쪽 정렬 : fr 클래스  -->
-							<button type="button" class="btn gray">검색</button>
-						</div>
-					</div>
-					<!-- //버튼 -->
-					
-					<!-- 그리드// -->
-					<div class="grid-wrap" style="max-height:300px;"><!-- scroll 기능 필요시 style="max-height:숫자px;" 선언해주세요. -->
-						<table class="grid">
-							<caption>그리드 정보</caption>
-							<colgroup>
-								<col style="width:10%;">
-								<col style="width:auto;">
-								<col style="width:30%;">
-								<col style="width:25%;">
-							</colgroup>
-							<thead>
-								<tr>
-									<th scope="col"><input type="checkbox" id="checkbox_all"><label for="checkbox_all"></label></th>
-									<th scope="col">제목</th>
-									<th scope="col">시리즈</th>
-									<th scope="col">카테고리</th>
-								</tr>
-							</thead>
-							<tbody>
-								<!-- 데이터가 있을 경우// -->
-
-								<tr class="mark"><!-- 추가되어 있는 경우 : tr class="mark" -->
-									<td><input type="checkbox" id="checkbox_01"><label for="checkbox_01"></label></td>
-									<td class="tal">저세상 다이어트로 생기를 잃은 그녀를 구해라!</td>
-									<td class="tal">[프로그램 시리즈명의 위치] 26화</td>
-									<td>Business > 뉴핀 성취자 > 건강</td>
-								</tr>
-
-								<tr>
-									<td><input type="checkbox" id="checkbox_02"><label for="checkbox_02"></label></td>
-									<td class="tal">모든 장면이 킬포! 코시국 집순이 관찰 카메라</td>
-									<td class="tal">[프로그램 시리즈명의 위치] 25화</td>
-									<td>Business > 뉴핀 성취자 > 건강</td>
-								</tr>
-								<tr class="mark">
-									<td><input type="checkbox" id="checkbox_03"><label for="checkbox_03"></label></td>
-									<td class="tal">처음 만나는 감각적인 샤워</td>
-									<td class="tal">[프로그램 시리즈명의 위치] 25화</td>
-									<td>Business > 뉴핀 성취자 > 건강</td>
-								</tr>
-								<tr>
-									<td><input type="checkbox" id="checkbox_04"><label for="checkbox_04"></label></td>
-									<td class="tal">스킨 케어에서, 스킨 뉴트리션으로</td>
-									<td class="tal">[프로그램 시리즈명의 위치] 25화</td>
-									<td>Business > 뉴핀 성취자 > 건강</td>
-								</tr>
-								<tr>
-									<td><input type="checkbox" id="checkbox_05"><label for="checkbox_05"></label></td>
-									<td class="tal">극과 극 모녀</td>
-									<td class="tal">[프로그램 시리즈명의 위치] 25화</td>
-									<td>Business > 뉴핀 성취자 > 건강</td>
-								</tr>
-								<!-- //데이터가 있을 경우 -->
-							</tbody>
-						</table>
-					</div>
-					<!-- //그리드 -->
-
-					<!-- 버튼// -->
-					<div class="btn-wrap">
-						<div>
-							<button type="button" class="btn white"><i class="icon add"></i>추가</button>
-							<button type="button" class="btn white"><i class="icon remove"></i>제외</button>
-						</div>
-					</div>
-					<!-- //버튼 -->
-					
-					<!-- 그리드// -->
-					<div class="grid-wrap" style="max-height:300px;"><!-- scroll 기능 필요시 style="max-height:숫자px;" 선언해주세요. -->
-						<table class="grid">
-							<caption>그리드 정보</caption>
-							<colgroup>
-								<col style="width:10%;">
-								<col style="width:auto;">
-								<col style="width:30%;">
-								<col style="width:25%;">
-							</colgroup>
-							<thead>
-								<tr>
-									<th scope="col"><input type="checkbox" id="checkbox_all2"><label for="checkbox_all2"></label></th>
-									<th scope="col">제목</th>
-									<th scope="col">시리즈</th>
-									<th scope="col">카테고리</th>
-								</tr>
-							</thead>
-							<tbody>
-								<!-- 데이터가 있을 경우// -->
-								<tr>
-									<td><input type="checkbox" id="checkbox_06"><label for="checkbox_06"></label></td>
-									<td class="tal">저세상 다이어트로 생기를 잃은 그녀를 구해라!</td>
-									<td class="tal">[프로그램 시리즈명의 위치] 26화</td>
-									<td>Business > 뉴핀 성취자 > 건강</td>
-								</tr>
-								<tr>
-									<td><input type="checkbox" id="checkbox_07"><label for="checkbox_07"></label></td>
-									<td class="tal">처음 만나는 감각적인 샤워</td>
-									<td class="tal">[프로그램 시리즈명의 위치] 25화</td>
-									<td>Business > 뉴핀 성취자 > 건강</td>
-								</tr>
-								<!-- //데이터가 있을 경우 -->
-								
-								<!-- 데이터가 없을 경우// -->
-								<tr>
-									<td colspan="4" class="no_data">콘텐츠를 선택해 주세요.</td>
-								</tr>
-								<!-- //데이터가 없을 경우 -->
-							</tbody>
-						</table>
-					</div>
-					<!-- //그리드 -->
-
-					<!-- 버튼// -->
-					<div class="btn-wrap">
-						<div>
-							<button type="button" class="btn big blue">적용</button>
-						</div>
-					</div>
-					<!-- //버튼 -->
-
 				</div>
-				<button type="button" class="btn_popclose" onclick="fn.popupClose('#popup01');"><span class="hidden">팝업닫기</span></button>
+				<!-- //그리드 -->
+
+				<!-- 버튼// -->
+				<div class="btn-wrap">
+					<div>
+						<button type="button" class="btn white"><i class="icon add"></i>추가</button>
+						<button type="button" class="btn white"><i class="icon remove"></i>제외</button>
+					</div>
+				</div>
+				<!-- //버튼 -->
+				
+				<!-- 그리드// -->
+				<div class="grid-wrap" style="max-height:300px;"><!-- scroll 기능 필요시 style="max-height:숫자px;" 선언해주세요. -->
+					<table class="grid">
+						<caption>그리드 정보</caption>
+						<colgroup>
+							<col style="width:10%;">
+							<col style="width:auto;">
+							<col style="width:30%;">
+							<col style="width:25%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col"><input type="checkbox" id="checkbox_all2"><label for="checkbox_all2"></label></th>
+								<th scope="col">제목</th>
+								<th scope="col">시리즈</th>
+								<th scope="col">카테고리</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- 데이터가 있을 경우// -->
+							<tr>
+								<td><input type="checkbox" id="checkbox_06"><label for="checkbox_06"></label></td>
+								<td class="tal">저세상 다이어트로 생기를 잃은 그녀를 구해라!</td>
+								<td class="tal">[프로그램 시리즈명의 위치] 26화</td>
+								<td>Business > 뉴핀 성취자 > 건강</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="checkbox_07"><label for="checkbox_07"></label></td>
+								<td class="tal">처음 만나는 감각적인 샤워</td>
+								<td class="tal">[프로그램 시리즈명의 위치] 25화</td>
+								<td>Business > 뉴핀 성취자 > 건강</td>
+							</tr>
+							<!-- //데이터가 있을 경우 -->
+							
+							<!-- 데이터가 없을 경우// -->
+							<tr>
+								<td colspan="4" class="no_data">콘텐츠를 선택해 주세요.</td>
+							</tr>
+							<!-- //데이터가 없을 경우 -->
+						</tbody>
+					</table>
+				</div>
+				<!-- //그리드 -->
+
+				<!-- 버튼// -->
+				<div class="btn-wrap">
+					<div>
+						<button type="button" class="btn big blue">적용</button>
+					</div>
+				</div>
+				<!-- //버튼 -->
+
 			</div>
+			<button type="button" class="btn_popclose" onclick="fn.popupClose('#popup01');"><span class="hidden">팝업닫기</span></button>
+		</div>
 	</div>
 	<!-- //팝업 -->
 

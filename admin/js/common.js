@@ -11,9 +11,30 @@ var fn = (function() {
 		//popup
 		popupOpen : function(obj){
 			$(obj).show();
+			fn.popupHeight();
 		},
 		popupClose : function(obj){
 			$(obj).hide();
+		},
+		popupHeight : function(obj){
+			//popup
+			$(".poplayer").each(function(){
+				var popupH = $(this).find(".inner").outerHeight(),
+						contentH = $(this).find(".cont").outerHeight(),
+						headerH = $(this).find("header").outerHeight();
+
+				
+				if( popupH < contentH ){	// 팝업틀의 높이보다 팝업내 content 높이가 더 크다면
+					var contheight = popupH - headerH;
+					$(this).find(".cont").outerHeight(contheight);
+				}
+
+				if (!(popupH % 2) == 0) { // 팝업틀의 높이가 홀수라면 흐린현상으로 짝수로 잡아준다.(transform 사용)
+					popupH -= 1;	// 홀수이면 -1해서 짝수로 높이 잡아주기.
+					$(this).find(".inner").outerHeight(popupH);
+					$(this).find(".inner").css("max-height","none");
+				}
+			});
 		}
 	}
 })();
@@ -75,24 +96,4 @@ $(document).ready(function(){
 
 });
 
-$(window).on("load",function(){
-	//popup
-	$(".poplayer").each(function(){
-		var popupH = $(this).find(".inner").outerHeight(),
-				contentH = $(this).find(".cont").outerHeight(),
-				headerH = $(this).find("header").outerHeight();
-
-		
-		if( popupH < contentH ){	// 팝업틀의 높이보다 팝업내 content 높이가 더 크다면
-			var contheight = popupH - headerH;
-			$(this).find(".cont").outerHeight(contheight);
-		}
-
-		if (!(popupH % 2) == 0) { // 팝업틀의 높이가 홀수라면 흐린현상으로 짝수로 잡아준다.(transform 사용)
-			popupH -= 1;	// 홀수이면 -1해서 짝수로 높이 잡아주기.
-			$(this).find(".inner").outerHeight(popupH);
-			$(this).find(".inner").css("max-height","none");
-		}
-	});
-});
 

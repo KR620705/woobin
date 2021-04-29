@@ -20,8 +20,7 @@
 		#wrap{padding:30px;}
 		.h3-title{margin-top:40px;}
 		.h3-title:first-child{margin-top:0;}
-		.list-style{margin-bottom:40px;}
-		.list-style li{font-size:16px;}
+		.h3-title + .list-style li{font-size:16px;}
 	</style>
 	<!-- //가이드 확인용 -->
 </head>
@@ -591,6 +590,42 @@
 		</table>
 		<!-- //테이블 -->
 
+
+		<h3 class="h3-title">세로형 테이블</h3>
+
+		<!-- 테이블// -->
+		<table class="table">
+			<caption>표 제목</caption>
+			<colgroup>
+				<col style="width:50%;">
+				<col style="width:auto;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">제목1</th>
+					<th scope="col">제목2</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<div class="text">텍스트</div>
+					</td>
+					<td>
+						<div class="text">텍스트</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="text">텍스트</div>
+					</td>
+					<td>
+						<div class="text">텍스트</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!-- //테이블 -->
 
 	</div>
 
