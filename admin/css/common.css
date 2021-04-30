@@ -70,27 +70,11 @@ input[type="radio"] ~ label:last-child{margin:0;}
 /* form */
 input, select, textarea, .inputbox{background:#fff;}
 
-/* input text, input password, input number, input email, input tel */
-input[type="text"],
-input[type="password"],
-input[type="number"],
-input[type="email"],
-input[type="tel"]{min-width:120px;width:100%;height:36px;margin-left:1%;padding:0 10px;vertical-align:middle;border:1px solid #e6e6e6;}
-input[type="text"]:first-child,
-input[type="password"]:first-child,
-input[type="number"]:first-child,
-input[type="email"]:first-child,
-input[type="tel"]:first-child{margin-left:0;}
-input[type="text"]:hover,
-input[type="password"]:hover,
-input[type="number"]:hover,
-input[type="email"]:hover,
-input[type="tel"]:hover{border-color:#222;}
-input[type="text"]:disabled,
-input[type="password"]:disabled,
-input[type="number"]:disabled,
-input[type="email"]:disabled,
-input[type="tel"]:disabled{color:#888;background:#f3f3f3;}
+/* input text, input password, input number, input email, input search */
+input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="search"]{min-width:120px;width:100%;height:36px;margin-left:1%;padding:0 10px;vertical-align:middle;border:1px solid #e6e6e6;}
+input[type="text"]:first-child, input[type="password"]:first-child, input[type="number"]:first-child, input[type="email"]:first-child, input[type="search"]:first-child{margin-left:0;}
+input[type="text"]:hover, input[type="password"]:hover, input[type="number"]:hover, input[type="email"]:hover, input[type="search"]:hover{border-color:#222;}
+input[type="text"]:disabled, input[type="password"]:disabled, input[type="number"]:disabled, input[type="email"]:disabled, input[type="search"]:disabled{color:#888;background:#f3f3f3;}
 
 /* input checkbox */
 input[type="checkbox"]{position:absolute;top:0;left:0;width:0;height:0;line-height:0;padding:0;border:0;overflow:hidden;}
@@ -105,6 +89,13 @@ input[type="radio"] + label{min-height:22px;padding-left:30px;background:url('..
 input[type="radio"]:checked + label{background-image:url('../img/rdo_checked.png');}
 input[type="radio"]:disabled + label{background-image:url('../img/rdo_disable.png');}
 input[type="radio"]:checked:disabled + label{background-image:url('../img/rdo_checked_disable.png');}
+
+/* input[type="search"] (input + 검색버튼) */
+.inputbox{display:inline-block;position:relative;width:100%;height:36px;margin-left:1%;padding-right:40px;vertical-align:middle;border:1px solid #e6e6e6;}
+.inputbox:first-child{margin-left:0;}
+.inputbox:hover{border-color:#222;}
+.inputbox input{width:100%;height:34px;padding-left:10px;border:none;}
+.inputbox .btn_search{position:absolute;top:0;right:0;width:40px;height:34px;background:url('../img/btn_search.png') no-repeat 50% 50%;text-indent:-9999px;overflow:hidden;}
 
 /* input file */
 .filebox{display:inline-block;width:100%;}
@@ -155,13 +146,6 @@ textarea:hover{border-color:#222;}
 .ui-datepicker td.ui-datepicker-today .ui-state-default:after{position:absolute;bottom:-12px;left:-6px;display:block;width:30px;color:#aea7a2;font-size:13px;font-weight:200;}
 .ui-datepicker td.ui-datepicker-today .ui-state-default.ui-state-active{background:#326dc2;color:#fff;}
 .ui-datepicker .ui-datepicker-current{display:none;}
-
-/* input + 검색버튼 */
-.inputbox{display:inline-block;position:relative;width:100%;height:36px;margin-left:1%;padding-right:40px;vertical-align:middle;border:1px solid #e6e6e6;}
-.inputbox:first-child{margin-left:0;}
-.inputbox:hover{border-color:#222;}
-.inputbox input[type="text"]{width:100%;height:34px;padding-left:10px;border:none;}
-.inputbox .btn_search{position:absolute;top:0;right:0;width:40px;height:34px;background:url('../img/btn_search.png') no-repeat 50% 50%;text-indent:-9999px;overflow:hidden;}
 
 /**
 * --------------------------------
