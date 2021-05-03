@@ -51,8 +51,9 @@
 
 /* text */
 .hyppen{display:inline-block;width:6%;font-size:14px;text-align:center;vertical-align:middle;}
-.text{font-size:13px;}
 .title{font-size:13px;}
+.text{font-size:13px;}
+.required{color:#ea2020;font-size:15px;}
 
 /* list */
 .list-style li{position:relative;margin-top:5px;padding-left:10px;color:#222;font-size:13px;}
