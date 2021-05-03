@@ -43,7 +43,7 @@
 .btn.big{min-width:300px;height:50px;line-height:48px;font-size:16px;}
 
 /* label */
-.label{display:inline-block;margin:3px 7px 3px 0;padding:7px 10px 8px 10px;background:#fff;color:#326dc2;font-size:13px;vertical-align:middle;border:1px solid #e6e6e6;border-radius:5px;}
+.label{display:inline-block;margin:3px 7px 3px 0;padding:7px 15px;background:#fff;color:#326dc2;font-size:13px;vertical-align:middle;border:1px solid #e6e6e6;border-radius:30px;}
 
 /* title */
 .h2-title{margin-bottom:20px;font-size:24px;}
@@ -168,9 +168,8 @@ textarea:hover{border-color:#222;}
 
 /* lnb */
 #lnb{position:absolute;top:0;left:0;width:240px;height:100%;background:#283a56;z-index:1;}
-#lnb h1{margin-top:20px;text-align:center;}
-#lnb h1 a{width:140px;padding-top:60px;padding-left:30px;background:url("../img/logo_white.png") no-repeat 0 0;color:#fff;font-size:18px;}
-#lnb > nav{margin-top:30px;padding:0 10px;}
+#lnb h1{margin-top:35px;text-align:center;}
+#lnb > nav{margin-top:20px;padding:0 10px;}
 #lnb > nav > ul > li{position:relative;}
 #lnb > nav > ul > li > a{display:block;position:relative;padding:13px 45px 13px 13px;color:#fff;font-size:16px;line-height:20px;}
 #lnb > nav > ul > li > a:hover{color:#669be6;}
@@ -252,7 +251,7 @@ textarea:hover{border-color:#222;}
 */
 
 /* login */
-#login .login-inner{position:absolute;top:50%;left:50%;width:400px;margin-top:-200px;margin-left:-200px;text-align:center;}
+#login .login-inner{position:absolute;top:50%;left:50%;width:380px;margin-top:-200px;margin-left:-190px;text-align:center;}
 #login .login-inner .logo{margin-bottom:30px;}
 #login .login-inner input{height:45px;margin-top:10px;margin-left:0;}
 #login .login-inner .btn.login{display:block;width:100%;margin:20px 0;border-radius:3px;}
