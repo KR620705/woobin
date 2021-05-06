@@ -265,5 +265,3 @@ textarea:hover{border-color:#222;}
 .sortable.column-3 .col{width:33%;}
 .sortable.column-4 .col{width:25%;}
 .sortable.column-5 .col{width:20%;}
-.sortable.type2 > li{background:#fff;}
-.sortable.type2 > li > .inner-column > li{padding:5px 0;background:#fff url("../img/bg_drag.png") no-repeat 100% 50%;}

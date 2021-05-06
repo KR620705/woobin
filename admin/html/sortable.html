@@ -31,8 +31,15 @@
 		<h3 class="h3-title">description</h3>
 		<ul class="list-style">
 			<li>col 개수에 따라 숫자도 맞춰주세요.<br>
-				2개일경우 column-2, 3개일경우 column-3, 4개일경우 column-4</li>
-			<li>depth2에만 드래그 적용이 필요한 경우 sortable에 type2 클래스를 넣어주세요</li>
+				2개일경우 column-2 클래스<br>
+				3개일경우 column-3 클래스<br>
+				4개일경우 column-4 클래스<br>
+				5개일경우 column-5 클래스<br>
+				ex) &lt;ul id="sortable_01" class="sortable column-4"&gt;
+			</li>
+			<li>
+				tal : 텍스트 왼쪽정렬
+			</li>
 		</ul>
 
 		<!-- 드래그앤드롭// -->
@@ -166,148 +173,6 @@
 			});
 		</script>
 		<!-- //드래그앤드롭 -->
-
-		<!-- 드래그앤드롭// -->
-		<h3 class="sortable-title">드로그앤드롭 depth2에만 적용</h3>
-		<ul class="sortable type2 column-4">
-			<!-- col 개수에 따라 숫자도 맞춰주세요. 2개일경우 column-2, 3개일경우 column-3... -->
-			<li>
-				<div class="col tal">
-					<span class="depth1">회원 관리</span>
-				</div>
-				<div class="col tal">
-					<span class="depth2"></span>
-				</div>
-				<div class="col">
-					<span class="color-blue">사용중</span>
-				</div>
-				<div class="col">
-					<button type="button" class="btn">수정</button>
-					<button type="button" class="btn">삭제</button>
-				</div>
-			</li>
-			<li>
-				<div class="col tal">
-					<span class="depth1">콘텐츠 관리</span>
-				</div>
-				<div class="col tal">
-					<span class="depth2"></span>
-				</div>
-				<div class="col">
-					<span class="color-blue">사용중</span>
-				</div>
-				<div class="col">
-					<button type="button" class="btn">수정</button>
-					<button type="button" class="btn">삭제</button>
-				</div>
-			</li>
-			<li>
-				<ul id="sortable_02" class="inner-column">
-					<li>
-						<div class="col tal">
-							<span class="depth1"></span>
-						</div>
-						<div class="col tal">
-							<span class="depth2">카테고리 관리</span>
-						</div>
-						<div class="col">
-							<span class="color-blue">사용중</span>
-						</div>
-						<div class="col">
-							<button type="button" class="btn">수정</button>
-							<button type="button" class="btn">삭제</button>
-						</div>
-					</li>
-					<li>
-						<div class="col tal">
-							<span class="depth1"></span>
-						</div>
-						<div class="col tal">
-							<span class="depth2">콘텐츠 관리</span>
-						</div>
-						<div class="col">
-							<span class="color-blue">사용중</span>
-						</div>
-						<div class="col">
-							<button type="button" class="btn">수정</button>
-							<button type="button" class="btn">삭제</button>
-						</div>
-					</li>
-				</ul>
-			</li>
-			<li>
-				<div class="col tal">
-					<span class="depth1">사이트 관리</span>
-				</div>
-				<div class="col tal">
-					<span class="depth2"></span>
-				</div>
-				<div class="col">
-					<span class="color-blue">사용중</span>
-				</div>
-				<div class="col">
-					<button type="button" class="btn">수정</button>
-					<button type="button" class="btn">삭제</button>
-				</div>
-			</li>
-			<li>
-				<ul id="sortable_03" class="inner-column">
-					<li>
-						<div class="col tal">
-							<span class="depth1"></span>
-						</div>
-						<div class="col tal">
-							<span class="depth2">공통 코드 관리</span>
-						</div>
-						<div class="col">
-							<span class="color-blue">사용중</span>
-						</div>
-						<div class="col">
-							<button type="button" class="btn">수정</button>
-							<button type="button" class="btn">삭제</button>
-						</div>
-					</li>
-					<li>
-						<div class="col tal">
-							<span class="depth1"></span>
-						</div>
-						<div class="col tal">
-							<span class="depth2">메뉴 관리</span>
-						</div>
-						<div class="col">
-							<span class="color-blue">사용중</span>
-						</div>
-						<div class="col">
-							<button type="button" class="btn">수정</button>
-							<button type="button" class="btn">삭제</button>
-						</div>
-					</li>
-					<li>
-						<div class="col tal">
-							<span class="depth1"></span>
-						</div>
-						<div class="col tal">
-							<span class="depth2">메인 관리</span>
-						</div>
-						<div class="col">
-							<span class="color-blue">사용중</span>
-						</div>
-						<div class="col">
-							<button type="button" class="btn">수정</button>
-							<button type="button" class="btn">삭제</button>
-						</div>
-					</li>
-				</ul>
-			</li>
-		</ul>
-		<script>
-			$(function(){
-				$("#sortable_02").sortable();
-				$("#sortable_03").sortable();
-			});
-		</script>
-		<!-- //드래그앤드롭 -->
-
 
 	</div>
 
